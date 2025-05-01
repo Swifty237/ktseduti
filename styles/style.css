@@ -1,7 +1,99 @@
-body {
+.panels-container {
+    padding: 3rem;
+    height: 100vh;
+}
+
+.left-panel {
+    background-color: #438a49;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-panel {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+}
+
+.connexion-form {
+    min-height: 50%;
+    width: 70%;
+}
+
+.welcome-text {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.small-text {
+    font-size: small;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.white-text {
+    color: white;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.start-button {
+    background-color: #438a49;
+    /* Même couleur que le main-button */
+    border-radius: 3rem;
+    margin-top: 2rem;
+    padding-inline: 4rem;
+}
+
+.help-button {
+    background-color: transparent;
+    /* Fond transparent */
+    border: 2px solid #438a49;
+    /* Bordure de la même couleur que le fond du main-button */
+    color: #438a49;
+    /* Texte de la même couleur que le fond du main-button */
+    border-radius: 3rem;
+    margin-top: 4rem;
+    margin-right: 4rem;
+    padding-inline: 4rem;
+    position: absolute;
+    /* Positionnement absolu */
+    top: 1rem;
+    /* Distance du haut de la page */
+    right: 1rem;
+    /* Distance de la droite de la page */
+    z-index: 10;
+    /* Assure que le bouton reste au-dessus des autres éléments */
+}
+
+.checkbox-container {
+    margin-top: 2rem;
+}
+
+.identifiant-container {
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.password-container {
+    margin-bottom: 3rem;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 40rem;
+    height: 40rem;
+    margin-bottom: 2rem;
 }

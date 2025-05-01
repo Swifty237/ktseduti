@@ -10,10 +10,52 @@
 </head>
 
 <body>
-    <div>
-        <h4>Test UIKIT</h4>
-        <button class="btn">Test button </button>
+    <div class="layout panels-container">
+        <div class="column column--1of3 left-panel">
+            <h2 class="white-text">HEALTH FOR EVERYONE</h2>
+            <img src="image/chatgptlogo.png" alt="Logo" class="logo" />
+            <p class="white-text">Termes & Conditions -KT SEDUTI 2022</p>
+        </div>
+        <div class="column column--2of3 right-panel">
+            <form action="#" class="form connexion-form">
+                <div class="form__field form__field--action">
+                    <input class="btn btn--main help-button" type="submit" value="Besoin d'aide ?" />
+                </div>
+                <h3 class="welcome-text">Bienvenue sur KT SEDUTI </h3>
+                <p class="small-text">Connecter vous pour accéder à votre dashboard.</p>
+                <!-- Input:Text -->
+                <div class="form__field identifiant-container">
+                    <label for="formInput#text" class="form-label">Identifiant: </label>
+                    <input class="input input--text" id="formInput#text" type="text" name="text"
+                        placeholder="Identifiant à 9 chiffres" />
+                </div>
+
+                <!-- Input:Password -->
+                <div class="form__field password-container">
+                    <label for="formInput#password" class="form-label">Mot de passe: </label>
+                    <input class="input input--password" id="formInput#passowrd" type="password" name="password"
+                        placeholder="••••••••" />
+                </div>
+
+                <!-- Input:Checkbox -->
+                <div class="display-flex">
+                    <div class="form__field form__field--checkbox checkbox-container">
+                        <input class="input input--checkbox" id="formInput#checkbox-03" type="checkbox"
+                            value="brewing-beer" name="hobby" />
+                        <label for="formInput#checkbox-03" class="small-text bold-text">Se souvenir de moi</label>
+                    </div>
+                    <p class="small-text bold-text" style="margin-top: .5rem;">Mot de passe oublié ?</p>
+                </div>
+
+
+                <!-- Input:Submit / Input:Reset  -->
+                <div class="form__field form__field--action">
+                    <input class="btn btn--main start-button" type="submit" value="Se connecter" />
+                </div>
+            </form>
+        </div>
     </div>
+
 </body>
 
 </html>
