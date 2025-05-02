@@ -10,17 +10,20 @@
 </head>
 
 <body>
-    <div class="layout panels-container">
-        <div class="column column--1of3 left-panel">
+    <div class="layout index-panels">
+        <div class="column column--1of3 index-left-panel">
             <h2 class="white-text">HEALTH FOR EVERYONE</h2>
-            <img src="image/chatgptlogo.png" alt="Logo" class="logo" />
-            <p class="white-text">Termes & Conditions -KT SEDUTI 2022</p>
+            <img src="resources/images/chatgptlogo.png" alt="Logo" class="logo" />
+            <p class="white-text">Termes & Conditions -KT SEDUTI 2025</p>
         </div>
-        <div class="column column--2of3 right-panel">
+        <div class="column column--2of3 index-right-panel">
             <form action="#" class="form connexion-form">
-                <div class="form__field form__field--action">
-                    <input class="btn btn--main help-button" type="submit" value="Besoin d'aide ?" />
-                </div>
+                <button class="btn btn--main green-rounded-outline-btn">Besoin d'aide ?</button>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/medical-record.html">médical record</a>
+                </li>
+
                 <h3 class="welcome-text">Bienvenue sur KT SEDUTI </h3>
                 <p class="small-text">Connecter vous pour accéder à votre dashboard.</p>
                 <!-- Input:Text -->
@@ -38,19 +41,18 @@
                 </div>
 
                 <!-- Input:Checkbox -->
-                <div class="display-flex">
-                    <div class="form__field form__field--checkbox checkbox-container">
+                <div class="display-flex space-between align-items-center">
+                    <div class="form__field form__field--checkbox checkbox-box">
                         <input class="input input--checkbox" id="formInput#checkbox-03" type="checkbox"
                             value="brewing-beer" name="hobby" />
                         <label for="formInput#checkbox-03" class="small-text bold-text">Se souvenir de moi</label>
                     </div>
-                    <p class="small-text bold-text" style="margin-top: .5rem;">Mot de passe oublié ?</p>
+                    <p class="small-text bold-text">Mot de passe oublié ?</p>
                 </div>
-
 
                 <!-- Input:Submit / Input:Reset  -->
                 <div class="form__field form__field--action">
-                    <input class="btn btn--main start-button" type="submit" value="Se connecter" />
+                    <input class="btn btn--main green-rounded-btn" type="submit" value="Se connecter" />
                 </div>
             </form>
         </div>
