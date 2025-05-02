@@ -138,17 +138,20 @@ body {
 }
 
 .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
     padding-inline: 2em;
 }
 
 .side-panel {
     background-color: #438a49;
     width: 18vw;
-    min-height: 90vh;
+    min-height: 93.8vh;
     padding-top: 3rem;
 }
 
