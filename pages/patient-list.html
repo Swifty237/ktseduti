@@ -163,20 +163,56 @@
                             <div class="column column--1of2">
                                 <select class="select-input" name="filter" id="filter-select">
                                     <option value="">Filtre</option>
-                                    <option value="male">Masculin</option>
-                                    <option value="female">Féminin</option>
                                 </select>
                             </div>
                         </div>
                         <div class="column column--1of2 layout">
-                            <div class="column column--1of2">
-                                <select class="select-input" name="calendar" id="calendar-select">
-                                    <option value="">Calendar</option>
-                                    <option value="male">Masculin</option>
-                                    <option value="female">Féminin</option>
-                                </select>
+                            <div class="column column--1of2 calendar-box">
+                                <div class="display-flex">
+                                    <button class="calendar-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                        </svg>
+                                    </button>
+
+                                    <input type="text" class="input input--text" id="formInput#text"
+                                        placeholder="Sélectionner une date" />
+                                </div>
+
+                                <div id="calendar-container">
+                                    <div class="display-flex align-items-center space-between">
+                                        <button class="arrow-left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                            </svg>
+                                        </button>
+                                        <div class="display-flex align-items-center"
+                                            style="justify-content: center; padding-block: 1rem;">
+                                            <p id="monthTxt" class="small-text" style="text-transform: uppercase;"></p>
+                                            <select name="year" id="yearSelect" style="padding: .5rem;">
+
+                                            </select>
+                                        </div>
+
+                                        <button class="arrow-right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div id="calendar"></div>
+                                </div>
+
                             </div>
-                            <div class="column column--1of2 add-del-panel">
+
+                            <div class="column column--1of2 add-del-box">
                                 <div class="new-add-box">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-database-fill-add" viewBox="0 0 16 16">
@@ -283,9 +319,8 @@
                                 <a href="#">1</a>
                                 <a href="#">2</a>
                                 <a href="#">3</a>
-                                <a href="#">4</a>
-                                <a href="#">5</a>
-                                <a href="#">6</a>
+                                <a href="#">...</a>
+                                <a href="#">8</a>
                                 <a href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -302,6 +337,7 @@
             </div>
         </div>
     </div>
+    <script src="../scripts/calendar.js"></script>
 </body>
 
 </html>
