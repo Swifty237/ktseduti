@@ -161,7 +161,7 @@
                             </div>
 
                             <div class="column column--1of2">
-                                <select class="select-input" name="filter" id="filter-select">
+                                <select class="select-input" name="filter" id="filteSelect">
                                     <option value="">Filtre</option>
                                 </select>
                             </div>
@@ -178,7 +178,7 @@
                                     </button>
 
                                     <input type="text" class="input input--text" id="formInput#text"
-                                        placeholder="Sélectionner une date" />
+                                        placeholder="Sélectionner une date" disabled />
                                 </div>
 
                                 <div id="calendar-container">
@@ -193,9 +193,7 @@
                                         <div class="display-flex align-items-center"
                                             style="justify-content: center; padding-block: 1rem;">
                                             <p id="monthTxt" class="small-text" style="text-transform: uppercase;"></p>
-                                            <select name="year" id="yearSelect" style="padding: .5rem;">
-
-                                            </select>
+                                            <select name="year" id="yearSelect"></select>
                                         </div>
 
                                         <button class="arrow-right">
@@ -207,9 +205,9 @@
                                         </button>
                                     </div>
 
+                                    <!-- Calendrier généré dynamiquement -->
                                     <div id="calendar"></div>
                                 </div>
-
                             </div>
 
                             <div class="column column--1of2 add-del-box">
